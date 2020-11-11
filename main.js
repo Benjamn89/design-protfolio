@@ -220,3 +220,19 @@ export const contact = () => {
     new IntersectionObserver(callback).observe(formDiv)
 }
 contact()
+
+//
+
+export const loadingPage = () => {
+  const img = document.querySelector('.header-img')
+  img.src = '../media/header/01.jpg'
+  const headerRight = document.querySelector('.header-right')
+  const headerLeft = document.querySelector('.header-left')
+  const spinner = document.querySelector('.spinner-loading')
+  img.onload = function() {
+   spinner.className='spinner-loading'
+   headerRight.style.display = 'flex'
+   headerLeft.style.display = 'flex'
+  }
+ }
+ loadingPage()

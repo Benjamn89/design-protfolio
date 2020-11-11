@@ -1,4 +1,4 @@
-export const navbar = () => {
+const navbar = () => {
     let state = true;
     const divs = document.querySelectorAll(".navbar div");
     const openNav = document.querySelector(".open-nav");
@@ -42,7 +42,7 @@ export const navbar = () => {
 navbar()
 
 //
-export const headerRight = () => {
+const headerRight = () => {
     let counter = 0;
     const observeEl = document.querySelector(".obesrve-api");
     const headerRight = document.querySelector(".header-right");
@@ -70,7 +70,7 @@ export const headerRight = () => {
  
  //
 
- export const projectsObserve = () => {
+ const projectsObserve = () => {
     const observeEl = document.querySelector(".observe-projects");
     const projectsWrapper = document.querySelector(".projects-title-wrapper");
     const recomTitle = document.querySelector(".recom-title");
@@ -87,7 +87,7 @@ export const headerRight = () => {
 projectsObserve()
 
 //
-export const recom = () => {
+const recom = () => {
     let counter = 3;
     let pastCounter = 0;
     const leftArrow = document.querySelector(".recom-arrow-left-svg");
@@ -107,7 +107,7 @@ recom()
 
 //
 
-export const awards = () => {
+const awards = () => {
     const awards = document.querySelector('.awards-wrapper')
     const awardsObserve = document.querySelector('.awards-observer')
     const callback = function(entries) {
@@ -130,7 +130,7 @@ export const awards = () => {
 
    //
 
-   export const workWith = () => {
+   const workWith = () => {
     const titleWrapper = document.querySelector('.work-with-title-wrapper')
     const titleLine = document.querySelector('.work-with-title-div')
     const titleObserve = document.querySelector('.work-with-observe')
@@ -160,7 +160,7 @@ workWith()
 
 //
 
-export const contact = () => {
+const contact = () => {
     const btn = document.querySelector('.contact-btn')
     const fullName = document.querySelector('#input-text')
     const email = document.querySelector('#input-email')
@@ -223,7 +223,7 @@ contact()
 
 //
 
-export const loadingPage = () => {
+const loadingPage = () => {
   const img = document.querySelector('.header-img')
   img.src = '../media/header/01.jpg'
   const headerRight = document.querySelector('.header-right')

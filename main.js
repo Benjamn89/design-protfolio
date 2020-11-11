@@ -225,7 +225,7 @@ contact()
 
 const loadingPage = () => {
   const img = document.querySelector('.header-img')
-  img.src = '../media/header/01.jpg'
+  img.src = './media/header/01.jpg'
   const headerRight = document.querySelector('.header-right')
   const headerLeft = document.querySelector('.header-left')
   const spinner = document.querySelector('.spinner-loading')

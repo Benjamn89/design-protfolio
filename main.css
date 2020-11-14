@@ -1,7 +1,5 @@
 .header-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -135,9 +133,7 @@
   animation: headerFirst 0.5s ease forwards;
   -webkit-transform-origin: 100% 0;
   transform-origin: 100% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   will-change: display;
 }
 
@@ -533,7 +529,7 @@
 .spinner-loading {
   position: absolute;
   left: 47%;
-  top: 25%;
+  top: 10%;
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -543,8 +539,8 @@
   -webkit-animation: loopIt 1s linear infinite;
   animation: loopIt 1s linear infinite;
   opacity: 0;
-  -webkit-transform: 0.3s ease opacity;
-  transform: 0.3s ease opacity;
+  -webkit-transition: 0.3s ease opacity;
+  transition: 0.3s ease opacity;
 }
 
 .spinner-on {

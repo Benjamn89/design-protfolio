@@ -230,9 +230,9 @@ const loadingPage = () => {
   const headerLeft = document.querySelector('.header-left')
   const spinner = document.querySelector('.spinner-loading')
   img.onload = function() {
-   spinner.className='spinner-loading'
-   headerRight.style.display = 'flex'
-   headerLeft.style.display = 'flex'
+      spinner.className='spinner-loading'
+      headerRight.style.display = 'flex'
+      headerLeft.style.display = 'flex'
   }
  }
  loadingPage()
